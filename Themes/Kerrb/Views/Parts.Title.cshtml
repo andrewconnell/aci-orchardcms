@@ -4,12 +4,16 @@
   // figure out if this is a search bot
   var searchBots = new List<string>() {"teoma", "alexa", "froogle", "gigabot", "inktomi", "looksmart", "url_spider_sql", "firefly", "nationaldirectory", "ask jeeves", "tecnoseek", "infoseek", "webfindbot", "girafabot",  "crawler", "www.galaxy.com", "googlebot", "scooter", "slurp", "msnbot", "appie", "fast", "webbug", "spade", "zyborg", "rabaz", "baiduspider", "feedfetcher-google", "technoratisnoop", "rankivabot", "mediapartners-google", "sogou web spider", "webalta crawler", "facebookexternalhit"};
   var requesterIsBot = false;
-  foreach (var bot in searchBots){
-    if (Request.UserAgent.ToLower().Contains(bot))
-    {
-      requesterIsBot = true;
-      break;
+  try{
+    foreach (var bot in searchBots){
+      if (Request.UserAgent.ToLower().Contains(bot))
+      {
+        requesterIsBot = true;
+        break;
+      }
     }
+  } finally{
+    // swallow error... let requester is bot = default
   }
 }
 
