@@ -400,10 +400,17 @@ input[type="submit"] {
 }
 
 /* list fixup (add back to content, but remove from forms) */
-#content div.articleContent ul,
+#content div.articleContent ul 
 #content div.articleContent ol {
   margin: 0 0 30px 35px;
-  list-style: disc outside none;
+  list-style-position: outside;
+  list-style-image: none;
+}
+#content div.articleContent ul {
+  list-style-type: disc;
+}
+#content div.articleContent ol {
+  list-style-type: decimal;
 }
 
 #content div.articleContent form ul,
