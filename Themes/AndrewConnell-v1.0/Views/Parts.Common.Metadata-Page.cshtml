@@ -1,1 +1,15 @@
-﻿<div class="meta"><em class="date">@Display(@Model.ContentPart.PublishedUtc.ToString("f"))</em></div>
+﻿@{
+  var created = @Display(@Model.ContentPart.CreatedUtc.ToString("f"));
+  var published = @Display(@Model.ContentPart.PublishedUtc.ToString("f"));
+}
+
+<div class="meta">
+  @if (created == published)
+  {
+    <em class="date">@(created)</em>
+  }
+  else
+  {
+    <em class="date">@(created) | updated: @published</em>
+  }
+</div>
