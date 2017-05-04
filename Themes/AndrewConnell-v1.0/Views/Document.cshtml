@@ -4,7 +4,7 @@
   Script.Include("html5.js").UseCondition("lt IE 9").AtHead();
 
   string title = Convert.ToString(Model.Title);
-  string siteName = "Andrew Connell, MVP SharePoint Server";
+  string siteName = "Andrew Connell";
   string openGraphLogo = string.Format("http://www.andrewconnell.com{0}", Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-openGraph.png")));
   string openGraphTitle = "AC's Blog";
   if (!string.IsNullOrEmpty(title)) {
