@@ -1,9 +1,25 @@
 # Changelog
 
+## 1.9.3.6 - May 4, 2017
+
+- fix(theme): type in ACCOM error page ([5997f47](https://github.com/andrewconnell/aci-orchardcms/commit/5997f47))
+- fix(theme): fix random error on kerrb page titles ([bbcf10b](https://github.com/andrewconnell/aci-orchardcms/commit/bbcf10b), Closes [#17](https://github.com/andrewconnell/aci-orchardcms/issues/17))
+- docs(): add doc to setup local dev environment ([95fd461](https://github.com/andrewconnell/aci-orchardcms/commit/95fd461))
+- fix(theme): update pretty print location and viewport ([877532d](https://github.com/andrewconnell/aci-orchardcms/commit/877532d), Closes [#34](https://github.com/andrewconnell/aci-orchardcms/issues/34))
+- fix(css): fix issue with OL not rendering numbers ([e93f383](https://github.com/andrewconnell/aci-orchardcms/commit/e93f383), Closes [#39](https://github.com/andrewconnell/aci-orchardcms/issues/39))
+- feat(theme): update page date in the header ([8c5083e](https://github.com/andrewconnell/aci-orchardcms/commit/8c5083e), Closes [#40](https://github.com/andrewconnell/aci-orchardcms/issues/40))
+- feat(content): update site name ([4f3377c](https://github.com/andrewconnell/aci-orchardcms/commit/4f3377c))
+- feat(content): update copyright ([718c723](https://github.com/andrewconnell/aci-orchardcms/commit/718c723))
+- feat(theme): move app insights to external js ([c4cff91](https://github.com/andrewconnell/aci-orchardcms/commit/c4cff91), Closes [#36](https://github.com/andrewconnell/aci-orchardcms/issues/36))
+- feat(style): css for download form ([20c62e7](https://github.com/andrewconnell/aci-orchardcms/commit/20c62e7), Closes [#40](https://github.com/andrewconnell/aci-orchardcms/issues/40))
+- docs(): added blog post snippets ([1fd3d74](https://github.com/andrewconnell/aci-orchardcms/commit/1fd3d74))
+- feat(content): remove codeplex badge ([ae8851a](https://github.com/andrewconnell/aci-orchardcms/commit/ae8851a))
+- feat(style): add bootstrap 3 ([20ca47e](https://github.com/andrewconnell/aci-orchardcms/commit/20ca47e), Closes [#42](https://github.com/andrewconnell/aci-orchardcms/issues/42))
+
 ## 1.9.3.5 - June 9, 2016
 
-- Update MSCloudshow theme for admin changes in **Contrib.Podcasts** 1.7 ([421d55a](https://github.com/ngOfficeUIFabric/ng-officeuifabric/commit/421d55a))
-- Update **Contrib.Podcasts** module to 1.7 ([54f9866](https://github.com/ngOfficeUIFabric/ng-officeuifabric/commit/54f9866))
+- Update MSCloudshow theme for admin changes in **Contrib.Podcasts** 1.7 ([421d55a](https://github.com/andrewconnell/aci-orchardcms/commit/421d55a))
+- Update **Contrib.Podcasts** module to 1.7 ([54f9866](https://github.com/andrewconnell/aci-orchardcms/commit/54f9866))
 - Added custom 500 & 404 views for ACCOM (Closes [#10](https://github.com/andrewconnell/aci-orchardcms/issues/10))
 - Modified deployment so post deployment script run to automatically copy Azure DLL's from Orchard.Azure to root `\bin` (Closes [#8](https://github.com/andrewconnell/aci-orchardcms/issues/8))
 
