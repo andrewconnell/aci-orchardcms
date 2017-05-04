@@ -1,5 +1,39 @@
 # Content Snippets Used in Posts
 
+## Callouts
+
+```html
+<div class="bs-callout">
+  <h4>message heading</h4>
+  lip sorem
+</div>
+
+<div class="bs-callout bs-callout-primary">
+  <h4>message heading</h4>
+  lip sorem
+</div>
+
+<div class="bs-callout bs-callout-success">
+  <h4>message heading</h4>
+  lip sorem
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>message heading</h4>
+  lip sorem
+</div>
+```
+
+When using a blockquote, use this. Not the font is bigger.
+
+```html
+<blockquote>
+  <p>some content goes here</p>
+  <footer>some footer goes here</footer>
+</blockquote>
+```
+
+
 ## Code Listings
 
 For inline code, use:
@@ -9,6 +43,15 @@ For inline code, use:
 ```
 
 For code blocks, use Gists when possible, otherwise use:
+
+```html
+<pre>
+let x = 'this is the first line, right after the opening code tag';
+let y = 'this is the second line ending right before the closing code tag';
+</pre>
+```
+
+Previously I was using Google's PrettyPrint. Plenty of posts will use it so kept for backwards compatibility, but don't use this in the future.
 
 ```html
 <pre class="prettyprint"><code>let x = 'this is the first line, right after the opening code tag';
