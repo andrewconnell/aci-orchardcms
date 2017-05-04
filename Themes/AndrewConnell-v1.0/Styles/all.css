@@ -3,12 +3,12 @@
    License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -53,16 +53,6 @@ a {
 ol, ul {
   list-style: none;
 }
-
-blockquote, q {
-  quotes: none;
-}
-
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: '';
-    content: none;
-  }
 
 table {
   border-collapse: collapse;
@@ -625,34 +615,13 @@ p code, li code {
       color: #ff7d16;
     }
 
-#content blockquote {
-  font-size: 13px;
-  line-height: 18px;
-  color: #21345e;
-  font-style: italic;
-  padding: 5px 0 5px 40px;
-  margin: 15px 50px 15px 50px;
-  position: relative;
-  min-height: 30px;
-  background-color: #F7F7F7;
-}
-
 #content strong {
   font-weight: bold;
 }
 
-#content blockquote strong {
-  font-weight: bold;
-}
-
-#content blockquote:before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background: url(../images/sprite.png) no-repeat -59px -20px;
-  width: 28px;
-  height: 23px;
+#content ul.blog-posts {
+  margin: 0;
+  padding: 0;
 }
 
 .siteAnnouncement {
@@ -1306,6 +1275,87 @@ p code, li code {
   border: red;
   border-radius: 5px;
 }
+/* /styles for download form */
+
+/* bootstrap callouts */
+/* Base styles (regardless of theme) */
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h1,
+.bs-callout h2,
+.bs-callout h3,
+.bs-callout h4,
+.bs-callout h5,
+.bs-callout h6 {
+  margin-top: 0;
+}
+
+.bs-callout-danger h1,
+.bs-callout-danger h2,
+.bs-callout-danger h3,
+.bs-callout-danger h4,
+.bs-callout-danger h5,
+.bs-callout-danger h6 {
+  color: #B94A48;
+}
+
+.bs-callout-warning h1,
+.bs-callout-warning h2,
+.bs-callout-warning h3,
+.bs-callout-warning h4,
+.bs-callout-warning h5,
+.bs-callout-warning h6 {
+  color: #C09853;
+}
+
+.bs-callout-info h1,
+.bs-callout-info h2,
+.bs-callout-info h3,
+.bs-callout-info h4,
+.bs-callout-info h5,
+.bs-callout-info h6 {
+  color: #3A87AD;
+}
+
+.bs-callout-success h1,
+.bs-callout-success h2,
+.bs-callout-success h3,
+.bs-callout-success h4,
+.bs-callout-success h5,
+.bs-callout-success h6 {
+  color: #3C763D;
+}
+
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+.bs-callout-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+/* /bootstrap callouts */
 
 @media only screen and (max-width: 1080px) {
   .feedback-holder,

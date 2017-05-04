@@ -23,6 +23,18 @@
   <meta property="og:url" content="@Request.Url.AbsoluteUri" />
   <meta property="og:type" content="website" />
   <script type="text/javascript" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/azure-app-insights.js"))"></script>
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+  <!-- /jquery -->
+  
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- /bootstrap -->
+
   @Display(Model.Head)
   <link rel="alternate" type="application/rss+xml" title="Andrew Connell's Blog'" href="http://feeds.andrewconnell.com/AndrewConnell" />
   <script type="text/javascript" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Scripts/jquery.main.min.js"))"></script>

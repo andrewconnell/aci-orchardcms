@@ -16,7 +16,6 @@
   Style.Include("prettify.min.css").AtHead();
   Script.Include("https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js").AtFoot();
   
-  Script.Require("jQuery").AtHead().UseCdn(true);
   Script.Include("ie.min.js").UseCondition("IE").AtHead();
 
   /* Some useful shortcuts or settings
@@ -43,75 +42,77 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="wrapper">
   <div class="w1">
-    <header id="header">
-      <div class="header-frame">
-        @Zone(Model.Header)
-        <strong class="logo">
-          <a href="/">
-            <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo.png"))" width="385" height="99" alt="Andrew Connell">
-            <img class="logo-mobile" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-mobile.png"))" width="259" height="101" alt="Andrew Connell">
-          </a>
-        </strong>
-        <!--social-networks-->
-        <div class="social-networks">
-          <div class="row" style="text-align: right">
-            <a href="http://www.facebook.com/jaconnell" title="Andrew Connell on Facebook" target="_blank">
-              <img style="display:inline" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-facebook.png"))" style="border: 0px" alt="Andrew Connell on Facebook" /></a>
-            <a href="http://www.twitter.com/andrewconnell" title="Andrew Connell on Twitter" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-twitter.png"))" style="border: 0px" alt="Andrew Connell on Twitter" /></a>
-            <a href="http://www.linkedin.com/in/andrewconnell" title="Andrew Connell on LinkedIn" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-linkedin.png"))" style="border: 0px" alt="Andrew Connell on LinkedIn" /></a>
-            <a href="http://www.youtube.com/user/jaconnell" title="Andrew Connell on YouTube" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-youtube.png"))" style="border: 0px" alt="Andrew Connell on YouTube" /></a>
-            <a href="http://instagram.com/andrewconnell1" title="Andrew Connell on Instagram" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-instagram.png"))" style="border: 0px" alt="Andrew Connell on YouTube" /></a>
-          </div>
-          <div class="row" style="text-align: right">
-            <a href="http://feeds.andrewconnell.com/AndrewConnell" title="Subscribe to Andrew Connell's Blog" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-rss.png"))" style="border: 0px" alt="Subscribe to Andrew Connell's Blog" /></a>
-            <a href="http://www.github.com/AndrewConnell" title="Andrew Connell on GitHub" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-github.png"))" style="border: 0px" alt="Andrew Connell on GitHub" /></a>
-            <a href="http://stackoverflow.com/users/306347/andrew-connell" title="Andrew Connell on Stackoverflow" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-stackoverflow.png"))" style="border: 0px" alt="Andrew Connell on Stackoverflow" /></a>
-            <a href="http://sharepoint.stackexchange.com/users/401/andrew-connell" title="Andrew Connell on the SharePoint StackExchange" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-sharepointexchange.png"))" style="border: 0px" alt="Andrew Connell on the SharePoint StackExchange" /></a>
-            <a href="http://www.pluralsight.com/author/andrew-connell" title="Andrew Connell on Pluralsight" target="_blank">
-              <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-pluralsight.png"))" style="border: 0px" alt="Andrew Connell on Pluralsight" /></a>
-          </div>
-        </div>
-      </div>
-      <!--panel-->
-      <div class="panel">
-        @if (Model.Search != null) {
-          <!--search-block-->
-          <div class="search-block">
-            <a href="#" class="opener">search</a>
-            <!--slide-->
-            <div class="slide">
-              <!--search-form-->
-              @Zone(Model.Search)
+    <div style="background-color:#ededed">
+      <header id="header">
+        <div class="header-frame">
+          @Zone(Model.Header)
+          <strong class="logo">
+            <a href="/">
+              <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo.png"))" width="385" height="99" alt="Andrew Connell">
+              <img class="logo-mobile" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-mobile.png"))" width="259" height="101" alt="Andrew Connell">
+            </a>
+          </strong>
+          <!--social-networks-->
+          <div class="social-networks">
+            <div class="row" style="text-align: right">
+              <a href="http://www.facebook.com/jaconnell" title="Andrew Connell on Facebook" target="_blank">
+                <img style="display:inline" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-facebook.png"))" style="border: 0px" alt="Andrew Connell on Facebook" /></a>
+              <a href="http://www.twitter.com/andrewconnell" title="Andrew Connell on Twitter" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-twitter.png"))" style="border: 0px" alt="Andrew Connell on Twitter" /></a>
+              <a href="http://www.linkedin.com/in/andrewconnell" title="Andrew Connell on LinkedIn" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-linkedin.png"))" style="border: 0px" alt="Andrew Connell on LinkedIn" /></a>
+              <a href="http://www.youtube.com/user/jaconnell" title="Andrew Connell on YouTube" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-youtube.png"))" style="border: 0px" alt="Andrew Connell on YouTube" /></a>
+              <a href="http://instagram.com/andrewconnell1" title="Andrew Connell on Instagram" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-instagram.png"))" style="border: 0px" alt="Andrew Connell on YouTube" /></a>
+            </div>
+            <div class="row" style="text-align: right">
+              <a href="http://feeds.andrewconnell.com/AndrewConnell" title="Subscribe to Andrew Connell's Blog" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-rss.png"))" style="border: 0px" alt="Subscribe to Andrew Connell's Blog" /></a>
+              <a href="http://www.github.com/AndrewConnell" title="Andrew Connell on GitHub" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-github.png"))" style="border: 0px" alt="Andrew Connell on GitHub" /></a>
+              <a href="http://stackoverflow.com/users/306347/andrew-connell" title="Andrew Connell on Stackoverflow" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-stackoverflow.png"))" style="border: 0px" alt="Andrew Connell on Stackoverflow" /></a>
+              <a href="http://sharepoint.stackexchange.com/users/401/andrew-connell" title="Andrew Connell on the SharePoint StackExchange" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-sharepointexchange.png"))" style="border: 0px" alt="Andrew Connell on the SharePoint StackExchange" /></a>
+              <a href="http://www.pluralsight.com/author/andrew-connell" title="Andrew Connell on Pluralsight" target="_blank">
+                <img style="display:inline;margin-left: 10px;" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/icon-pluralsight.png"))" style="border: 0px" alt="Andrew Connell on Pluralsight" /></a>
             </div>
           </div>
-        }
-        <!--menu-->
-        <div class="menu">
-          <a href="#" class="opener">menu</a>
-          <!--slide-->
-          <div class="slide">
-            <!--nav-->
-            @Zone(Model.Navigation)
+        </div>
+        <!--panel-->
+        <div class="panel">
+          @if (Model.Search != null) {
+            <!--search-block-->
+            <div class="search-block">
+              <a href="#" class="opener">search</a>
+              <!--slide-->
+              <div class="slide">
+                <!--search-form-->
+                @Zone(Model.Search)
+              </div>
+            </div>
+          }
+          <!--menu-->
+          <div class="menu">
+            <a href="#" class="opener">menu</a>
+            <!--slide-->
+            <div class="slide">
+              <!--nav-->
+              @Zone(Model.Navigation)
+            </div>
           </div>
         </div>
+      </header>
+      <!-- promo block -->
+      <div class="promo-block">
+        <p><a class="logo-mvp" href="http://mvp.microsoft.com/en-us/mvp/Andrew%20Connell-21083"><img width="80" height="120" alt="Microsoft MVP Logo" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-mvp.png"))" /></a></p>
+        <div id="promo-block-text" class="text">
+            <!-- featured zone -->
+            @Zone(Model.Featured)
+            <!-- featured zone -->
+        </div>      
       </div>
-    </header>
-    <!-- promo block -->
-    <div class="promo-block">
-      <p><a class="logo-mvp" href="http://mvp.microsoft.com/en-us/mvp/Andrew%20Connell-21083"><img width="80" height="120" alt="Microsoft MVP Logo" src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Images/logo-mvp.png"))" /></a></p>
-      <div id="promo-block-text" class="text">
-          <!-- featured zone -->
-          @Zone(Model.Featured)
-          <!-- featured zone -->
-      </div>      
     </div>
 
     <div id="main">
