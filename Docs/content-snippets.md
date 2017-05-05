@@ -74,17 +74,17 @@ Right-align:
 
 ## Download Forms
 
-1. Get the form ID from Drip & replace all `{{{-DRIPFORMID-}}}`
-  - there are three instances to replace
+1. Get the form ID from Drip & replace all `{{{DRIPFORMID}}}`
+  - there are two (2) instances to replace
 
 > The fields with `data-drip-attribute` will be overwritten with the values from the form. The values in the form below are placeholders until they get updated.
 
 ```html
 <div class="dl-container">
   <div class="dl-container-form">
-    <p data-drip-attribute="headline" class="dl-container-form-title">Download this Post's Resources</p>
-    <p data-drip-attribute="description">Enter your email and I will send you a ZIP of the resources. No spam &amp; I won't share your email with anyone.</p>
-    <form action="https://www.getdrip.com/forms/{{{-DRIPFORMID-}}}/submissions" method="post" data-drip-embedded-form="{{{-DRIPFORMID-}}}" data-drip-id="{{{-DRIPFORMID-}}}">
+    <h2 data-drip-attribute="headline">Download this Post's Resources</h2>
+    <div data-drip-attribute="description">Enter your email and I will send you a ZIP of the resources.<br /><em>No spam &amp; I won't share your email with anyone.</em></div>
+    <form action="https://www.getdrip.com/forms/{{{DRIPFORMID}}}/submissions" method="post" data-drip-embedded-form="{{{DRIPFORMID}}}">
       <input class="subscribe-email" type="email" name="fields[email]" placeholder="your email address">
       <button type="submit" data-drip-attribute="sign-up-button">send me the download</button>
     </form>
