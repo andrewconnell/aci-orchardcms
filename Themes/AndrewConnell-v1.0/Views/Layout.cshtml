@@ -12,11 +12,15 @@
   Style.Include("all.min.css").SetAttribute("media", "screen");
   Style.Include("print.min.css").SetAttribute("media", "print");
 
-/* Google code prettify (https://github.com/google/code-prettify) */
+  /* Google code prettify (https://github.com/google/code-prettify) */
   Style.Include("prettify.min.css").AtHead();
   Script.Include("https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js").AtFoot();
   
+  /* ie fixup */
   Script.Include("ie.min.js").UseCondition("IE").AtHead();
+
+  /* azure app insights */
+  Script.Include("azure-app-insights.js").AtHead();
 
   /* Some useful shortcuts or settings
   ***************************************************************/
