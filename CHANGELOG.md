@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.3.7 - May 5, 2017
+
+- feat(style): update form styles ([26065b1](https://github.com/andrewconnell/aci-orchardcms/commit/26065b1))
+- refactor(): move app insights to layout ([34e455e](https://github.com/andrewconnell/aci-orchardcms/commit/34e455e))
+- refactor(): remove empty spaces ([3116760](https://github.com/andrewconnell/aci-orchardcms/commit/3116760))
+- feat(drip): update hidden drip form fields ([3881641](https://github.com/andrewconnell/aci-orchardcms/commit/3881641))
+
 ## 1.9.3.6 - May 4, 2017
 
 - fix(theme): type in ACCOM error page ([5997f47](https://github.com/andrewconnell/aci-orchardcms/commit/5997f47))
