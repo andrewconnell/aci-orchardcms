@@ -87,13 +87,10 @@ Right-align:
 ```html
 <div class="dl-container">
   <div class="dl-container-form">
-    <h2 data-drip-attribute="headline">Download this Post's Resources</h2>
-    <div data-drip-attribute="description">Enter your email and I will send you a ZIP of the resources.<br /><em>No spam &amp; I won't share your email with anyone.</em></div>
     <form action="https://www.getdrip.com/forms/{{{DRIPFORMID}}}/submissions" method="post" data-drip-embedded-form="{{{DRIPFORMID}}}">
+      <h2 data-drip-attribute="headline">Download this Post's Resources</h2>
+      <div data-drip-attribute="description">Enter your email and I will send you a ZIP of the resources.<br /><em>No spam &amp; I won't share your email with anyone.</em></div>
       <input class="subscribe-email" type="email" name="fields[email]" placeholder="your email address">
-      <input type="hidden" name="time_zone" value="<script>document.write(Intl.DateTimeFormat().resolvedOptions().timeZone);</script>">
-      <input type="hidden" name="url" value="">
-      <input type="hidden" name="page_title" value="">
       <button type="submit" data-drip-attribute="sign-up-button">send me the download</button>
     </form>
   </div>
