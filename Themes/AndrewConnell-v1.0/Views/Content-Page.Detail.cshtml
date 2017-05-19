@@ -5,11 +5,6 @@
   }
 
   var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
-
-  // don't show social stuff for homepage
-  if (WorkContext.HttpContext.Request.Path.HtmlClassify() != "") {
-    Model.Content.Add(New.SocialSharingControls(), "5");
-  }
 }
 <article class="content-item @contentTypeClassName">
   <header>
