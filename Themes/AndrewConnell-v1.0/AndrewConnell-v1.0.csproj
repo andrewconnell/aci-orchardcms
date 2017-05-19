@@ -140,9 +140,6 @@
     <Content Include="Views\Parts.Title.Summary-BlogPost.cshtml" />
     <Content Include="Views\Search.cshtml" />
     <Content Include="Views\User.cshtml" />
-    <Content Include="Views\SocialSharingControls.cshtml">
-      <SubType>Code</SubType>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\ie.min.js.map" />
