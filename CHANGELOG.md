@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.9.3.8 - May 19, 2017
+
+- fix(drip): remove drip hidden fields ([2fbff67](https://github.com/andrewconnell/aci-orchardcms/commit/2fbff67))
+- docs(snippets): fix download form errors ([3847019](https://github.com/andrewconnell/aci-orchardcms/commit/3847019))
+- feat(view): change social sharing ([cb81c95](https://github.com/andrewconnell/aci-orchardcms/commit/cb81c95))
+- chore(view): remove social sharing control from proj ([044a586](https://github.com/andrewconnell/aci-orchardcms/commit/044a586))
+
 ## 1.9.3.7 - May 5, 2017
 
 - feat(style): update form styles ([26065b1](https://github.com/andrewconnell/aci-orchardcms/commit/26065b1))
