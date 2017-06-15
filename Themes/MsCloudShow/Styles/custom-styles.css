@@ -3,8 +3,8 @@
    override existing main.css stylesheets.
    ========================================================================== */
 
-#content h1 { color:#38C8E0; font-size:29px; line-height:35px; letter-spacing:-1px; }
-#content h2 { color:#38C8E0; }
+#content h1 { color:#22b573; font-size:29px; line-height:35px; letter-spacing:-1px; }
+#content h2 { color:#22b573; }
 .blog-post .metadata p { display:inline-block; }
 .blog-posts { margin:0; list-style-type:none; }
 
