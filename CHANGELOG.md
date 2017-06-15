@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.3.9 - May 19, 2017
+
+- feat(mscloudshow): update brand to v2 ([842ab41](https://github.com/andrewconnell/aci-orchardcms/commit/842ab41))
+
 ## 1.9.3.8 - May 19, 2017
 
 - fix(drip): remove drip hidden fields ([2fbff67](https://github.com/andrewconnell/aci-orchardcms/commit/2fbff67))

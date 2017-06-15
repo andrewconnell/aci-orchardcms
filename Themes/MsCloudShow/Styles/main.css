@@ -96,11 +96,11 @@ a:hover {
 }
 
 ::selection {
-	background: #38c8e0; /* Safari */
+	background: #22b573; /* Safari */
 	color: #FFFFFF;
 }
 ::-moz-selection {
-	background: #38c8e0; /* Firefox */
+	background: #22b573; /* Firefox */
 	color: #FFFFFF;
 }
 
@@ -170,7 +170,7 @@ iframe {
 }
 
 .blue {
-  color: #38c8e0;
+  color: #22b573;
 }
 
 .orange {
@@ -191,7 +191,7 @@ iframe {
   background: #2b3033;
   background-repeat: repeat-x;
   border-color: #2b3033;
-  border-top: 5px solid #38c8e0;
+  border-top: 5px solid #22b573;
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b3033', endColorstr='#2b3033', GradientType=0);
 }
 
@@ -286,7 +286,7 @@ iframe {
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: #38c8e0;
+  color: #22b573;
   background-color: transparent;
   background-image: -moz-linear-gradient(top, #26292B, #26292B);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#26292B), to(#26292B));
@@ -310,7 +310,7 @@ iframe {
 
 
 li.sign-up {
-  background: #38c8e0 repeat scroll 0 0;
+  background: #22b573 repeat scroll 0 0;
   border: none;
   font-weight: 400;
   border-radius: 0px;
@@ -420,7 +420,7 @@ li.sign-up:hover {
    ========================================================================== */
 
 #home-content {
-  background: #38c8e0;
+  background: #22b573;
 }
 
 .home-box {
@@ -431,7 +431,7 @@ li.sign-up:hover {
 
 
 .home-box:hover {
-  background: url("../Content/images/arrow.png") no-repeat scroll center bottom #35A3BC;
+  background: url("../Content/images/arrow.png") no-repeat scroll center bottom #198152;
   transition: all 0.35s ease-in-out;
 	-moz-transition: all 0.35s ease-in-out;
 	-webkit-transition: all 0.35s ease-in-out;
@@ -492,7 +492,7 @@ li.sign-up:hover {
 }
 
 #blue-container {
-  background: #38c8e0;
+  background: #22b573;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -587,7 +587,7 @@ li.sign-up:hover {
   border-image: none;
   border-style: solid;
   border-width: 1px;
-  color: #38C8E0;
+  color: #22b573;
   cursor: default;
   padding: 10px 18px;
 }
@@ -602,7 +602,7 @@ li.sign-up:hover {
 
 .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
     border-color: #FFFFFF;
-    color: #38C8E0;
+    color: #22b573;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -907,7 +907,7 @@ ul.social-icons li a {
 }
 
 ul.social-icons li a:hover {
-	color: #38C8E0;
+	color: #22b573;
 	bottom: 12px;
 	text-decoration: none;
 	transition: all 0.35s ease-in-out;
