@@ -71,6 +71,7 @@
     <Content Include="Content\images\bx_loader.gif" />
     <Content Include="Content\images\controls.png" />
     <Content Include="Content\logo.png" />
+    <Content Include="Content\mscloudshow2.png" />
     <Content Include="Scripts\bootstrap-portfilter.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -82,9 +83,9 @@
       <DependentUpon>animate.css</DependentUpon>
     </Content>
     <Content Include="Styles\bootstrap.min.css" />
-    <Content Include="Styles\custom-styles.css" />
-    <Content Include="Styles\custom-styles.min.css">
-      <DependentUpon>custom-styles.css</DependentUpon>
+    <Content Include="Styles\mscloudshow.css" />
+    <Content Include="Styles\mscloudshow.min.css">
+      <DependentUpon>mscloudshow.css</DependentUpon>
     </Content>
     <Content Include="Styles\font-awesome.min.css" />
     <Content Include="Styles\jquery.bxslider.css" />
